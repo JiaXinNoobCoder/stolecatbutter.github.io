@@ -1,0 +1,61 @@
+theme: PaperMod
+baseURL: "https://yourusername.github.io/" # 替换为你的 GitHub Pages 域名
+title: "我的技术博客"
+languageCode: "zh-cn"
+defaultContentLanguage: "zh"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: 我的技术博客
+  description: "记录技术与生活"
+  keywords:
+  author: Me
+  defaultTheme: auto # 自动跟随系统深色模式
+  ShowReadingTime: true # 显示阅读时间
+  ShowShareButtons: true # 显示分享按钮
+  ShowPostNavLinks: true # 显示上一篇/下一篇
+  ShowBreadCrumbs: true # 显示面包屑导航
+  ShowCodeCopyButtons: true # 显示代码块复制按钮
+  
+  # 个人简介配置（首页显示）
+  profileMode:
+    enabled: true
+    title: "Hi, I'm Developer"
+    subtitle: "专注后端架构与云原生技术"
+    imageUrl: "<image-link>" # 头像 URL
+    buttons:
+      - name: GitHub
+        url: "https://github.com/yourname"
+      - name: Twitter
+        url: "https://twitter.com/yourname"
+
+  # 社交图标（页脚）
+  socialIcons:
+    - name: github
+      url: "https://github.com/yourname"
+
+# 菜单配置
+menu:
+  main:
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 30
